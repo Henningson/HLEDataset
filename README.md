@@ -1,5 +1,5 @@
 # The Human Laser Endoscopic (HLE) Dataset
-This repository contains the human-laser endoscopic dataset proposed in the Paper [TODO].
+This repository contains the human-laser endoscopic dataset proposed in the Paper **Real-Time 3D Reconstruction of Human Vocal Folds via High-Speed Laser-Endoscopy**.
 It contains 10 high-speed in-vivo endoscopy videos of human vocal folds during phonation, that were captured using a 4000 FPS camera.
 While recording, a laser projection unit projected a symmetric 18 by 18 laser grid pattern into the laryngeal area.
 For further information about the system used to record these videos, please have a look at the paper: ![Endoscopic laser-based 3d imaging for func-
