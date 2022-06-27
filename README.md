@@ -4,9 +4,9 @@
 This repository contains the human-laser endoscopic dataset proposed in the Paper **Real-Time 3D Reconstruction of Human Vocal Folds via High-Speed Laser-Endoscopy**.
 It contains 10 high-speed in-vivo endoscopy videos of human vocal folds during phonation, that were captured using a 4000 FPS camera.
 While recording, a laser projection unit projected a symmetric 18 by 18 laser grid pattern into the laryngeal area.
-For further information about the system used to record these videos, please have a look at the paper: ![Endoscopic laser-based 3d imaging for functional voice diagnostics](https://www.mdpi.com/2076-3417/7/6/600) by Semmler et al. 
+For further information about the system used to record these videos, please have a look at the paper: <a href="https://www.mdpi.com/2076-3417/7/6/600">Endoscopic laser-based 3d imaging for functional voice diagnostics</a> by Semmler et al. 
 
-This is a joint work of the ![Chair of Visual Computing](https://www.lgdv.tf.fau.de/) of the Friedrich-Alexander University of Erlangen-Nuremberg and the ![Phoniatric Division](https://www.hno-klinik.uk-erlangen.de/phoniatrie/) of the University Hospital Erlangen.
+This is a joint work of the <a href="https://www.lgdv.tf.fau.de/">Chair of Visual Computing</a> of the Friedrich-Alexander University of Erlangen-Nuremberg and the <a href="https://www.hno-klinik.uk-erlangen.de/phoniatrie/">Phoniatric Division</a> of the University Hospital Erlangen.
 
 ## Files
 * visualize.py - An example on how to use the data supplied in this dataset.
