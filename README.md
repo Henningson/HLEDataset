@@ -11,7 +11,7 @@ This is a joint work of the <a href="https://www.lgdv.tf.fau.de/">Chair of Visua
 * visualize.py - An example on how to use the data supplied in this dataset.
 * camera_calibration.json - Contains the intrinsic 3x3 camera matrix, as well as the distortion coefficients.
 * laser_calibration.json - Contains the lasers rotation matrix, the inter-laser angle alpha, the laser grid dimensions and lastly the 3D-translation of the laser.
-* [A-Z][A-Z]/[A-Z][A-Z].avi the actual recording.
+* [A-Z][A-Z]/[A-Z][A-Z].avi the actual recording of size 512x256 (HEIGHT x WIDTH).
 * [A-Z][A-Z]/[A-Z][A-Z].json labels extracted from the video. For further instructions have a look at __Data__.
 	
 ## Data
@@ -35,9 +35,10 @@ The data in the specific json files contain:
 * **Offset**: The X- and Y-Offsets of the 2D Points that need to be added to the X and Y Coordinates of the 2DPoints to reconstruct the correct labels.
 
 ## Examples
-![CF](images/CF.png)![CM](images/CM.png)![DD](images/DD.png)![MK](images/MK.png)
+![CF](images/CFs.png)![CM](images/CMs.png)![DD](images/DDs.png)![MK](images/MKs.png)
 
 ## Citation
+Please cite this paper, if this work helps you with your research:
 ```
 @InProceedings{10.1007/978-3-031-16449-1_1,
   author="Henningson, Jann-Ole and Stamminger, Marc and D{\"o}llinger, Michael and Semmler, Marion",
