@@ -4,10 +4,9 @@
 This repository contains the human-laser endoscopic dataset proposed in the Paper **Real-Time 3D Reconstruction of Human Vocal Folds via High-Speed Laser-Endoscopy**.
 It contains 10 high-speed in-vivo endoscopy videos of human vocal folds during phonation, that were captured using a 4000 FPS camera.
 While recording, a laser projection unit projected a symmetric 18 by 18 laser grid pattern into the laryngeal area.
-For further information about the system used to record these videos, please have a look at the paper: ![Endoscopic laser-based 3d imaging for functional voice diagnostics](https://www.mdpi.com/2076-3417/7/6/600) by Semmler et al. 
+For further information about the system used to record these videos, please have a look at the paper: <a href="https://www.mdpi.com/2076-3417/7/6/600">Endoscopic laser-based 3d imaging for functional voice diagnostics</a> by Semmler et al.
 
-This is a joint work of the ![Chair of Visual Computing](https://www.lgdv.tf.fau.de/) of the Friedrich-Alexander University of Erlangen-Nuremberg and the ![Phoniatric Division](https://www.hno-klinik.uk-erlangen.de/phoniatrie/) of the University Hospital Erlangen.
-
+This is a joint work of the <a href="https://www.lgdv.tf.fau.de/">Chair of Visual Computing</a> of the Friedrich-Alexander University of Erlangen-Nuremberg and the <a href="https://www.hno-klinik.uk-erlangen.de/phoniatrie/">Phoniatric Division</a> of the University Hospital Erlangen.
 ## Files
 * visualize.py - An example on how to use the data supplied in this dataset.
 * camera_calibration.json - Contains the intrinsic 3x3 camera matrix, as well as the distortion coefficients.
@@ -16,6 +15,18 @@ This is a joint work of the ![Chair of Visual Computing](https://www.lgdv.tf.fau
 * [A-Z][A-Z]/[A-Z][A-Z].json labels extracted from the video. For further instructions have a look at __Data__.
 	
 ## Data
+You can extract the data automatically using the supplied ```extract_dataset.py``` script, via  
+```python extract_dataset.py --dataset_path DATASET_PATH```  
+If you do not move files around before hand, you can also just use    
+```python extract_dataset.py```  
+The extracted data will include six directories:
+* **glottal_mask**: Binary mask of the glottis
+* **heatmap**: 2D Gaussians depicting the positions of the laser dots
+* **mask**: Binarized positions of the laser dots
+* **png**: The recording itself
+* **points2d**: Numpy array containing sub-pixel accurate 2D point positions
+* **vf_mask**: A mask of the vocal folds itself.
+
 The data in the specific json files contain:
 * **GlottalSegmentation**: The Glottal Segmentation as per Frame Polygons of type FRAME_NUM x VERTICES x 2
 * **GlottalMidline**: The Glottal Midline per Frame of type FRAME_NUM x 2 x 2
@@ -27,3 +38,15 @@ The data in the specific json files contain:
 ![CF](images/CF.png)![CM](images/CM.png)![DD](images/DD.png)![MK](images/MK.png)
 
 ## Citation
+```
+@InProceedings{10.1007/978-3-031-16449-1_1,
+  author="Henningson, Jann-Ole and Stamminger, Marc and D{\"o}llinger, Michael and Semmler, Marion",
+  title="Real-Time 3D Reconstruction of Human Vocal Folds via High-Speed Laser-Endoscopy",
+  booktitle="Medical Image Computing and Computer Assisted Intervention -- MICCAI 2022",
+  year="2022",
+  pages="3--12",
+  isbn="978-3-031-16449-1"
+}
+```
+You can find a PDF of the Paper in the <a href="https://github.com/Henningson/Vocal3D">Vocal3D Repository</a>.
+Or get it here: <a href="https://link.springer.com/chapter/10.1007/978-3-031-16449-1_1">Springer Link</a>.
